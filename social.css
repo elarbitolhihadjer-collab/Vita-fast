@@ -1,0 +1,44 @@
+*{box-sizing:border-box}
+:root{--navy:#062d78;--blue:#087dcc;--cyan:#12b8ed;--pale:#edf7ff;--ink:#12376f}
+html{min-height:100%;background:#f3f8ff}
+body{margin:0;min-height:100vh;padding:24px 16px 30px;color:var(--ink);font-family:"DM Sans",Arial,sans-serif;background:radial-gradient(circle at 12% 8%,#d8f1ff 0,transparent 30%),radial-gradient(circle at 90% 85%,#d8e8ff 0,transparent 28%),linear-gradient(145deg,#f8fbff,#edf6ff);overflow-x:hidden}
+.page-glow{position:fixed;border-radius:50%;filter:blur(65px);opacity:.45;pointer-events:none;z-index:0}.glow-a{width:220px;height:220px;background:#58d5ff;top:-90px;right:-60px}.glow-b{width:250px;height:250px;background:#78aaff;bottom:-120px;left:-90px}
+.social-page{position:relative;z-index:1;width:min(100%,510px);margin:0 auto}
+.top-actions{display:flex;align-items:center;justify-content:space-between;margin:0 2px 15px}
+.back-link{font-size:12px;font-weight:700;color:#54749c;text-decoration:none}
+.lang-toggle{border:1px solid #d9e8f7;background:#fff;color:var(--navy);border-radius:30px;padding:9px 15px;font:700 12px "DM Sans",sans-serif;cursor:pointer;box-shadow:0 5px 16px #12376f0b}
+.profile-card{position:relative;overflow:hidden;text-align:center;padding:30px clamp(19px,5vw,34px) 27px;background:#fff;border:1px solid #e2edf8;border-radius:28px;box-shadow:0 22px 65px #164a8117}
+.profile-card:before{content:"";position:absolute;left:-80px;top:-110px;width:240px;height:240px;border-radius:50%;background:linear-gradient(135deg,#e4f7ff,#f5fbff);z-index:0}
+.profile-card>*{position:relative}
+.brand-logo{width:142px;height:142px;margin:0 auto 13px;padding:5px;border-radius:23px;background:#fff;box-shadow:0 10px 28px #0c5a9b18}
+.brand-logo img{width:100%;height:100%;object-fit:cover;border-radius:18px;display:block}
+.status{display:inline-flex;align-items:center;gap:7px;padding:7px 12px;border-radius:30px;background:#eff9ff;color:#1689c9;font-size:9px;font-weight:900;letter-spacing:1.5px}
+.status i{width:6px;height:6px;background:#16b8e9;border-radius:50%;box-shadow:0 0 0 4px #16b8e91a}
+h1{margin:13px 0 2px;font-size:35px;line-height:1;font-weight:900;letter-spacing:-1.8px;color:var(--navy)}
+h1 em{font-style:normal;color:#08a9e5}
+.subtitle{margin:7px 0 0;font-size:10px;font-weight:800;letter-spacing:1.2px;color:#52749d}
+.intro{max-width:340px;margin:17px auto 22px;color:#7185a1;font-size:13px;line-height:1.7}
+.links-list{display:grid;gap:10px;text-align:left}
+.social-link{display:flex;align-items:center;gap:13px;min-height:68px;padding:11px 14px;border:1px solid #e6eef7;border-radius:16px;background:#fff;text-decoration:none;color:var(--navy);transition:transform .2s,box-shadow .2s,border-color .2s}
+.social-link:hover{transform:translateY(-2px);border-color:#c9e5f8;box-shadow:0 9px 24px #0d4a8010}
+.social-icon{width:43px;height:43px;display:grid;place-items:center;flex:none;border-radius:13px;color:#fff;font-size:24px;font-weight:900}
+.instagram .social-icon{background:linear-gradient(135deg,#753bd1,#e83b83,#ff9b42)}
+.facebook .social-icon{background:#1877f2}
+.tiktok .social-icon{background:#111}
+.whatsapp .social-icon{background:#19b96b}
+.link-copy{display:block;min-width:0}.link-copy b,.link-copy small{display:block}.link-copy b{font-size:14px}.link-copy small{margin-top:3px;color:#8496ad;font-size:11px}
+.arrow{margin-left:auto;font-size:20px;color:#159bd7}
+.call-button{display:flex;align-items:center;gap:10px;margin-top:18px;padding:14px 15px;border-radius:15px;background:linear-gradient(110deg,#07357f,#087fca);color:#fff;text-decoration:none;font-size:12px;font-weight:700;box-shadow:0 10px 22px #0753a526}
+.call-button>span:first-child{font-size:18px}.call-button b{margin-left:auto;font-size:12px;white-space:nowrap}
+.location-link{display:inline-block;margin-top:18px;color:#168acb;font-size:12px;font-weight:800;text-decoration:none}
+footer{text-align:center;padding:20px 10px 0;color:#8194ad}
+footer p{margin:0 0 7px;color:#52749d;font-size:12px;font-weight:700}
+footer small{font-size:9px;letter-spacing:1px}
+[dir=rtl] .top-actions{flex-direction:row-reverse}
+[dir=rtl] .social-link{text-align:right}
+[dir=rtl] .arrow{margin-left:0;margin-right:auto}
+[dir=rtl] .call-button{flex-direction:row-reverse}
+[dir=rtl] .call-button b{margin-left:0;margin-right:auto}
+[dir=rtl] .subtitle{letter-spacing:0;font-family:"Cairo",sans-serif}
+[dir=rtl] .intro,[dir=rtl] footer{font-family:"Cairo",sans-serif}
+@media(max-width:390px){body{padding:14px 11px 22px}.profile-card{padding:23px 15px 22px;border-radius:23px}.brand-logo{width:125px;height:125px}h1{font-size:31px}.call-button{gap:7px;font-size:11px}.call-button b{font-size:11px}}
